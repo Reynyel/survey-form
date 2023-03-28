@@ -6,42 +6,76 @@ body{
     background-image: linear-gradient(
         115deg,
         rgba(22, 8, 70, 0.8),
-        rgba(136, 136, 206, 0.7)
+        rgba(87, 87, 124, 0.7)
       ), url(https://rare-gallery.com/uploads/posts/520682-technology-light.jpg);
     background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
     color: #FFFFFF;
 }
 
-h1{
-    font-size: 2em;
-    font-weight: 400;
+#title{
+    font-size: 2.5em;
+    font-weight: 600;
     line-height: 1.2;
 }
 
-p{
+#description{
     font-style: italic;
 }
 
-h1, p{
+#title, #description{
     text-align: center;
+    margin: 1em auto;
 }
 
 form{
- padding: 2.5rem 0; 
- max-width: 500px;  
- min-width: 300px;
- margin: 0 auto;
+    background-color: rgba(29, 29, 77, 0.7);
+    padding: 2.5rem ;
+    max-width: 500px;  
+    min-width: 300px;
+    margin: 0 auto;
+    font-size: 1.1rem;
 }
 
 label{
     display: block;
+    padding: 0.5rem 0;
 }
 
 fieldset{
-    border: 0;
+    border: none;
     border-bottom: 3px solid #ac9fda;
+    padding: 2rem 0;
 }
 
 fieldset:last-of-type{
     border-bottom: none;
 }
+
+input, textarea,
+#dropdown{
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+
+input[type="radio"], [type="checkbox"]{
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
+}
+
+
+input[type="submit"]{
+    height: 2em;
+    width: 60%;
+    min-width: 300px;
+    display: block;
+    margin: 1em auto;
+    font-size: 1.1rem;
+    background-color: #452f94;
+    color: #ffffff;
+}
+
